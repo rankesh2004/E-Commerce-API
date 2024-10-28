@@ -28,7 +28,7 @@ This is an e-commerce REST API built with Express.js, MongoDB, and JWT for authe
 
 The server will run at http://localhost:3000.
 
-##Environment Variables
+## Environment Variables
 Update the authenticateUser middleware to replace "MY_SECRET_KEY" with a custom JWT secret.
 
 ## Dependencies
