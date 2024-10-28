@@ -39,7 +39,7 @@ Update the authenticateUser middleware to replace "MY_SECRET_KEY" with a custom 
 - mongoose: MongoDB object modeling for Node.js
 
 # API Endpoints
-## Authenticatio
+## Authentication
 ### Sign Up
 
 - POST /signup
