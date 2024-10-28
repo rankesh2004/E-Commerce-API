@@ -9,30 +9,26 @@ This is an e-commerce REST API built with Express.js, MongoDB, and JWT for authe
 ## Getting Started
 
 1. **Clone the repository:**
-
-```bash
-git clone <repository_url>
+   ```bash
+   git clone <repository_url>
 
 2. **Navigate into the project directory:**
-
-```bash
-cd ecommerceAPI
+   ```bash
+   cd ecommerceAPI
 
 3. **Install dependencies:**
-
-```bash
-npm install
+   ```bash
+   npm install
 
 4. **Start the MongoDB server on your local machine (ensure MongoDB is running on mongodb://127.0.0.1:27017).**
 
 5. **Start the Express server:**
-
-```bash
-node app.js
+   ```bash
+   node app.js
 
 The server will run at http://localhost:3000.
 
-Environment Variables
+##Environment Variables
 Update the authenticateUser middleware to replace "MY_SECRET_KEY" with a custom JWT secret.
 
 ## Dependencies
