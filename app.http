@@ -1,0 +1,87 @@
+POST http://localhost:3000/signup
+Content-Type: application/json
+
+{
+    "name": "sriram",
+    "username": "sriram_2004",
+    "email": "sriram@gmail.com",
+    "password": "sriram123"
+}
+
+###
+POST http://localhost:3000/signin
+Content-Type: application/json
+
+{
+    "email": "sriram2000@gmail.com",
+    "password": "sriram123"
+}
+
+###
+PUT http://localhost:3000/users/671f246db6b667b1ca798305
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyRGV0YWlscyI6eyJ1c2VyIjoiNjcxZjI0NmRiNmI2NjdiMWNhNzk4MzA1IiwiZW1haWwiOiJzcmlyYW0yMDAwQGdtYWlsLmNvbSJ9LCJpYXQiOjE3MzAxMDM5NjF9.0P1AIaRsxsYNOQBYBaL_9GjsSevoMHZeXNJ_lamCfXo
+Content-Type: application/json
+
+{
+    "name": "sriram1",
+    "username": "sriram_2000",
+    "email": "sriram2000@gmail.com"
+}
+
+###
+GET http://localhost:3000/products
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyRGV0YWlscyI6eyJ1c2VyIjoiNjcxZjI0NmRiNmI2NjdiMWNhNzk4MzA1IiwiZW1haWwiOiJzcmlyYW0yMDAwQGdtYWlsLmNvbSJ9LCJpYXQiOjE3MzAxMDM5NjF9.0P1AIaRsxsYNOQBYBaL_9GjsSevoMHZeXNJ_lamCfXo
+###
+GET http://localhost:3000/products/24
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyRGV0YWlscyI6eyJ1c2VyIjoiNjcxZjI0NmRiNmI2NjdiMWNhNzk4MzA1IiwiZW1haWwiOiJzcmlyYW0yMDAwQGdtYWlsLmNvbSJ9LCJpYXQiOjE3MzAxMDM5NjF9.0P1AIaRsxsYNOQBYBaL_9GjsSevoMHZeXNJ_lamCfXo
+###
+GET http://localhost:3000/products?sortby=1&category=Clothing&rating=4
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyRGV0YWlscyI6eyJ1c2VyIjoiNjcxZjI0NmRiNmI2NjdiMWNhNzk4MzA1IiwiZW1haWwiOiJzcmlyYW0yMDAwQGdtYWlsLmNvbSJ9LCJpYXQiOjE3MzAxMDM5NjF9.0P1AIaRsxsYNOQBYBaL_9GjsSevoMHZeXNJ_lamCfXo
+###
+POST http://localhost:3000/cart
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyRGV0YWlscyI6eyJ1c2VyIjoiNjcxZjI0NmRiNmI2NjdiMWNhNzk4MzA1IiwiZW1haWwiOiJzcmlyYW0yMDAwQGdtYWlsLmNvbSJ9LCJpYXQiOjE3MzAxMDM5NjF9.0P1AIaRsxsYNOQBYBaL_9GjsSevoMHZeXNJ_lamCfXo
+Content-Type: application/json
+
+{
+    "title": "Front Load Machine",
+    "brand": "Samsung",
+    "price": 22490,
+    "quantity": 3,
+    "image_url": "https://assets.ccbp.in/frontend/react-js/ecommerce/appliances-washing-machine.png"
+}
+
+
+###
+GET http://localhost:3000/cart
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyRGV0YWlscyI6eyJ1c2VyIjoiNjcxZjI0NmRiNmI2NjdiMWNhNzk4MzA1IiwiZW1haWwiOiJzcmlyYW0yMDAwQGdtYWlsLmNvbSJ9LCJpYXQiOjE3MzAxMDM5NjF9.0P1AIaRsxsYNOQBYBaL_9GjsSevoMHZeXNJ_lamCfXo
+
+###
+PUT http://localhost:3000/cart
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyRGV0YWlscyI6eyJ1c2VyIjoiNjcxZjI0NmRiNmI2NjdiMWNhNzk4MzA1IiwiZW1haWwiOiJzcmlyYW0yMDAwQGdtYWlsLmNvbSJ9LCJpYXQiOjE3MzAxMDM5NjF9.0P1AIaRsxsYNOQBYBaL_9GjsSevoMHZeXNJ_lamCfXo
+Content-Type: application/json
+
+{
+    "id": "671f75fc977190107568cf20",
+    "quantity": 3
+}
+
+###
+DELETE http://localhost:3000/cart/671f75fc977190107568cf20
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyRGV0YWlscyI6eyJ1c2VyIjoiNjcxZjI0NmRiNmI2NjdiMWNhNzk4MzA1IiwiZW1haWwiOiJzcmlyYW0yMDAwQGdtYWlsLmNvbSJ9LCJpYXQiOjE3MzAxMDM5NjF9.0P1AIaRsxsYNOQBYBaL_9GjsSevoMHZeXNJ_lamCfXo
+
+###
+POST http://localhost:3000/orders
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyRGV0YWlscyI6eyJ1c2VyIjoiNjcxZjI0NmRiNmI2NjdiMWNhNzk4MzA1IiwiZW1haWwiOiJzcmlyYW0yMDAwQGdtYWlsLmNvbSJ9LCJpYXQiOjE3MzAxMDM5NjF9.0P1AIaRsxsYNOQBYBaL_9GjsSevoMHZeXNJ_lamCfXo
+Content-Type: application/json
+
+{
+    "title": "Front Load Machine",
+    "brand": "Samsung",
+    "price": 22490,
+    "quantity": 3,
+    "image_url": "https://assets.ccbp.in/frontend/react-js/ecommerce/appliances-washing-machine.png"
+}
+
+###
+GET http://localhost:3000/orders
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyRGV0YWlscyI6eyJ1c2VyIjoiNjcxZjI0NmRiNmI2NjdiMWNhNzk4MzA1IiwiZW1haWwiOiJzcmlyYW0yMDAwQGdtYWlsLmNvbSJ9LCJpYXQiOjE3MzAxMDM5NjF9.0P1AIaRsxsYNOQBYBaL_9GjsSevoMHZeXNJ_lamCfXo
